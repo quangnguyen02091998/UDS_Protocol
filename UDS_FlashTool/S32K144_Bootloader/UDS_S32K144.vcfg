@@ -1,0 +1,23 @@
+<VFlash Title="VFlash Config">
+  <Flash Title="ECU Flash">
+    <Data>
+      <File Label="Flash Driver" IsDriver="True" Path="UDS_S32K144_FlashDriverExtracted.hex" CRC="UDS_CRC_S32K144.dll" />
+      <File Label="APP" Path="UDS_S32K144_APP.hex" CRC="UDS_CRC_S32K144.dll" />
+    </Data>
+    <Config>
+      <Device>Ixxat</Device>
+      <CanType>CAN</CanType>
+      <Bitrate>500000</Bitrate>
+      <TxId>0x74C</TxId>
+      <RxId>0x75C</RxId>
+      <FunctionalId>0x6FF</FunctionalId>
+      <STmin>0</STmin>
+      <P2>100</P2>
+      <Timeout>5000</Timeout>
+      <SecurityLevel>1</SecurityLevel>
+      <UDSBufferSize>130</UDSBufferSize>
+      <SeedKeyDll>UDS_SecurityAccess.dll</SeedKeyDll>
+      <FlashActionsPath>UDS_S32K144_FlashSequence.xml</FlashActionsPath>
+    </Config>
+  </Flash>
+</VFlash>

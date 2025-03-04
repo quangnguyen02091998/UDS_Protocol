@@ -1,0 +1,11 @@
+<FlashActions>
+	<StartExtendedSession IsFunctional="false"/>
+	<CustomRequest Name="Disable Normal Communication" DataRequest="28 03 03"/>
+	<StartProgrammingSession/>
+	<PerformSecurityAccess/>
+	<CustomRequest Name="Write Finger Print" DataRequest="2E F1 5A 55 55"/>
+	<FlashBinaries/>
+	<CheckProgrammingDependencies/>
+	<HardReset IsFunctional="false" AlwaysExecuted="true"/>
+	<StartDefaultSession IsFunctional="false"/>
+</FlashActions>
